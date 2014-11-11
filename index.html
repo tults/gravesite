@@ -10,6 +10,11 @@
         margin: 0px;
         padding: 0px
       }
+      .images{
+        width: 50px;
+        height: 80px;
+      }
+
     </style>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
     <script>
@@ -34,7 +39,7 @@
           var marker = new google.maps.Marker(markerOptions);
         //starbucks
          var entrance = new google.maps.LatLng(40.658115, -73.994606);
-          var starbucksMarkerOptions = {
+          var entranceMarkerOptions = {
               position: entrance,
               map: map,
               title:"Welcome to Greenwood",
@@ -42,6 +47,16 @@
           };
           // To add the marker to the map, use the 'map' property
       //    var starbucksMarker = new google.maps.Marker(starbucksMarkerOptions);
+      var marker = new google.maps.Marker(markerOptions);
+        //starbucks
+         var entrance = new google.maps.LatLng(40.658115, -73.994606);
+          var entranceMarkerOptions = {
+              position: entrance,
+              map: map,
+              title:"Welcome to Greenwood",
+             icon: 'http://www.photographium.com/sites/default/files/entrance_to_greenwood_cemetery_brooklyn_new_york_city_new_york._1906.jpg' //url to images
+          };
+          $("body").addClass("images");
       }
       google.maps.event.addDomListener(window, 'load', initialize);
     </script>
