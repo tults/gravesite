@@ -21,7 +21,7 @@
       var map;
       var initialize = function() {
         var mapOptions = {
-          zoom: 15,
+          zoom: 16,
           center: new google.maps.LatLng(40.652842, -73.987517)
         };
         var map = new google.maps.Map(document.getElementById('map-canvas'),
@@ -73,7 +73,7 @@
       //}
       var marker = new google.maps.Marker(aduryeeMarkerOptions);
         //starbucks
-         var ADuryee = new google.maps.LatLng(40.652755, -73.983924);
+         var ADuryee = new google.maps.LatLng(40.652701, -73.988712);
           var aduryeeMarkerOptions = {
               position: ADuryee,
               map: map,
@@ -83,26 +83,26 @@
          
        var aduryeeMarker = new google.maps.Marker(aduryeeMarkerOptions);
    // //   }
-   //    var marker = new google.maps.Marker(hchadwickMarkerOptions);
-   //      //starbucks
-   //       var HChadwick = new google.maps.LatLng(40.652755, -73.983924);
-   //        var hchadwickMarkerOptions = {
-   //            position: HChadwick,
-   //            map: map,
-   //            title:"Henry Chadwick",
-   //           icon: 'http://www.westernjournalism.com/wp-content/uploads/2013/11/Henry-Ward-Beecher-SC.jpg' //url to images
-   //        };
+      var marker = new google.maps.Marker(hchadwickMarkerOptions);
+        //starbucks
+         var HChadwick = new google.maps.LatLng(40.657720, -73.986290);
+          var hchadwickMarkerOptions = {
+              position: HChadwick,
+              map: map,
+              title:"Henry Chadwick",
+             //icon: 'http://www.westernjournalism.com/wp-content/uploads/2013/11/Henry-Ward-Beecher-SC.jpg' //url to images
+          };
         
-       // var hchadwickMarker = new google.maps.Marker(hchadwickMarkerOptions); 
+       var hchadwickMarker = new google.maps.Marker(hchadwickMarkerOptions); 
      // }
       var marker = new google.maps.Marker(cebbetsMarkerOptions);
         //starbucks
-         var CEbbets = new google.maps.LatLng(40.652755, -73.983924);
+         var CEbbets = new google.maps.LatLng(40.652755,  -73.986291);
           var cebbetsMarkerOptions = {
               position: CEbbets,
               map: map,
               title:"Charles Ebbets",
-             icon: 'http://www.westernjournalism.com/wp-content/uploads/2013/11/Henry-Ward-Beecher-SC.jpg' //url to images
+             //icon: 'http://www.westernjournalism.com/wp-content/uploads/2013/11/Henry-Ward-Beecher-SC.jpg' //url to images
           };
 
         var cebbetsMarker = new google.maps.Marker(cebbetsMarkerOptions)
