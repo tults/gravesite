@@ -11,8 +11,8 @@
         padding: 0px
       }
       .images{
-        width: 50px;
-        height: 80px;
+        width: 10px;
+        height: 20px;
       }
 
     </style>
@@ -26,39 +26,91 @@
         };
         var map = new google.maps.Map(document.getElementById('map-canvas'),
             mapOptions);
+
         var myLatlng = new google.maps.LatLng(40.652842, -73.987517);
-        //cooper union
+        
+        //Peter Cooper
           var position = new google.maps.LatLng(40.652842, -73.987517);
+
           var markerOptions = {
               position: position,
               map: map,
               title:"Here Lies Peter Cooper",
-              icon: 'http://www.tradecards.com/articles/personages/images/per26.jpg' //url to images
+      //        icon: 'http://www.tradecards.com/articles/personages/images/per26.jpg' //url to images
           };
+
           // To add the marker to the map, use the 'map' property
           var marker = new google.maps.Marker(markerOptions);
-        //starbucks
-         var entrance = new google.maps.LatLng(40.658115, -73.994606);
+        
+        //Green Wood Entrance
+          var entrancePosition = new google.maps.LatLng(40.658115, -73.994606); //needs to be position for var??
+          
           var entranceMarkerOptions = {
-              position: entrance,
+              position: entrancePosition,
               map: map,
               title:"Welcome to Greenwood",
-             icon: 'http://www.photographium.com/sites/default/files/entrance_to_greenwood_cemetery_brooklyn_new_york_city_new_york._1906.jpg' //url to images
+             // icon: 'http://www.photographium.com/sites/default/files/entrance_to_greenwood_cemetery_brooklyn_new_york_city_new_york._1906.jpg' //url to images
           };
+
+          var entranceMarker = new google.maps.Marker(entranceMarkerOptions);
+
+       // } do i need this thing?
+
           // To add the marker to the map, use the 'map' property
       //    var starbucksMarker = new google.maps.Marker(starbucksMarkerOptions);
-      var marker = new google.maps.Marker(markerOptions);
-        //starbucks
-         var entrance = new google.maps.LatLng(40.658115, -73.994606);
-          var entranceMarkerOptions = {
-              position: entrance,
+      var marker = new google.maps.Marker(hgeorgeMarkerOptions);
+        //HGeorge
+         var HGeorge = new google.maps.LatLng(40.652755, -73.983924);
+          var hgeorgeMarkerOptions = {
+              position: HGeorge,
               map: map,
-              title:"Welcome to Greenwood",
-             icon: 'http://www.photographium.com/sites/default/files/entrance_to_greenwood_cemetery_brooklyn_new_york_city_new_york._1906.jpg' //url to images
+              title:"Henry George",
+            // icon: 'http://www.westernjournalism.com/wp-content/uploads/2013/11/Henry-Ward-Beecher-SC.jpg' //url to images
           };
-          $("body").addClass("images");
+         
+         var hgeorgeMarker = new google.maps.Marker(hgeorgeMarkerOptions);
+    
+      //}
+      var marker = new google.maps.Marker(aduryeeMarkerOptions);
+        //starbucks
+         var ADuryee = new google.maps.LatLng(40.652755, -73.983924);
+          var aduryeeMarkerOptions = {
+              position: ADuryee,
+              map: map,
+              title:"Abram Duryee",
+             //icon: 'http://www.westernjournalism.com/wp-content/uploads/2013/11/Henry-Ward-Beecher-SC.jpg' //url to images
+          };
+         
+       var aduryeeMarker = new google.maps.Marker(aduryeeMarkerOptions);
+   // //   }
+   //    var marker = new google.maps.Marker(hchadwickMarkerOptions);
+   //      //starbucks
+   //       var HChadwick = new google.maps.LatLng(40.652755, -73.983924);
+   //        var hchadwickMarkerOptions = {
+   //            position: HChadwick,
+   //            map: map,
+   //            title:"Henry Chadwick",
+   //           icon: 'http://www.westernjournalism.com/wp-content/uploads/2013/11/Henry-Ward-Beecher-SC.jpg' //url to images
+   //        };
+        
+       // var hchadwickMarker = new google.maps.Marker(hchadwickMarkerOptions); 
+     // }
+      var marker = new google.maps.Marker(cebbetsMarkerOptions);
+        //starbucks
+         var CEbbets = new google.maps.LatLng(40.652755, -73.983924);
+          var cebbetsMarkerOptions = {
+              position: CEbbets,
+              map: map,
+              title:"Charles Ebbets",
+             icon: 'http://www.westernjournalism.com/wp-content/uploads/2013/11/Henry-Ward-Beecher-SC.jpg' //url to images
+          };
+
+        var cebbetsMarker = new google.maps.Marker(cebbetsMarkerOptions)
+         // $("body").addClass("images"); needs editing to select the specific variables
       }
       google.maps.event.addDomListener(window, 'load', initialize);
+
+
     </script>
   </head>
   <body>
